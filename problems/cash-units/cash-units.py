@@ -9,7 +9,7 @@ def cash_units(input_value):
 
         count = int(remaining_value_in_cents / denomination_in_cents)
         result[denomination] = count
-        
+
         remaining_value_in_cents = remaining_value_in_cents - (denomination_in_cents * count)
     return result
 
